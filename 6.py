@@ -8,7 +8,7 @@ print("오늘은 ",12,"월 ",2,"일 입니다.",sep="")
 print("Hello".upper())
 print("Hello".lower())
 
-friends = "고찬국 김다운 김민창"
+friends = "이은비 김다운 김민창"
 a = friends.split("김") # '김' 기준으로 나누어짐
 print(a)
 
