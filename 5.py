@@ -38,4 +38,10 @@ del rainbow[3:7]
 print(rainbow)
 
 # index, pop, count 해보기
+print(rainbow.index("pink"))
+
+rainbow.pop(2)
+
+# count
+rainbow.count("blue")
 
