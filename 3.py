@@ -29,4 +29,3 @@ name = input("이름을 입력하세요. ")
 birth = int(input("태어난 년도를 입력하세요. "))
 year = int(input("올해 년도를 입력하세요. "))
 print("올해는"+ str(year) +"년 ,"+ name +"님의 나이는"+ str(year-birth+1) + "세 입니다")
-

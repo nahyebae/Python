@@ -44,4 +44,3 @@ rainbow.pop(2)
 
 # count
 rainbow.count("blue")
-
