@@ -1,4 +1,4 @@
-# 과제2. 자판기 프로그램
+# 과제 2. 자판기 프로그램
 vending_machine = ['게토레이', '레쓰비', '생수', '이프로']
 drink = input("마시고 싶은 음료? ")
 
@@ -7,7 +7,7 @@ if drink in vending_machine:
 else:
     print(f"{drink}는 지금 없네요\n")
 
-# 과제3. 자판기 프로그램 응용
+# 과제 3. 자판기 프로그램 응용
 vending_machine = ['게토레이','게토레이','레쓰비','레쓰비','생수','생수','생수','이프로']
 print(f"남은 음료수: {vending_machine}\n")
 user = int(input("사용자 종류를 입력하세요: \n1.소비자\n2.주인\n"))
@@ -43,3 +43,5 @@ elif user == 2:
         print("잘못된 값입니다.")
 else:
     print("잘못된 값입니다.")
+
+# 되라

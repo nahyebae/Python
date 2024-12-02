@@ -1,16 +1,16 @@
-# song = input("너의 최애 노래는?")
-# print(song)
-# print(type(song))
+song = input("너의 최애 노래는?")
+print(song)
+print(type(song))
 
-# a = input("1+1=?")
-# # print(a)
-# print(int(a)*2) 
-# number = int(input())
+a = input("1+1=?")
+print(a)
+print(int(a)*2) 
+number = int(input())
 
-# a = 2
-# print(str(2)*10)
-# print(str(2)+"입니다")
-# print(2+"입니다") # 에러
+a = 2
+print(str(2)*10)
+print(str(2)+"입니다")
+print(2+"입니다") # 에러
 
 print("|\_/|")
 print("|q p|   /}")

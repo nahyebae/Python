@@ -1,16 +1,16 @@
 a = [] # 0부터 시작
 b = [1,2,3,4]
-c = ["장원영", "안유진"]
-d = [1, "아이브"]
+c = ["카리나", "윈터"]
+d = [1, "에스파"]
 
 print(len(c))
-print(c[0]) # 장원영
-print(c[1]) # 안유진
-c[0] = "카리나"
+print(c[0]) # 카리나
+print(c[1]) # 윈터
+c[0] = "아이유"
 print(c)
 del c[0]
 print(c)
-c.append("asdfs") # append 추가
+c.append("asdf") # append 추가
 print(c)
 
 print(b[-1]) # 뒤에서 첫번째 마이너스는 뒤에서 역순

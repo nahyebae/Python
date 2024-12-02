@@ -40,7 +40,7 @@ print(rainbow)
 # index, pop, count 해보기
 print(rainbow.index("pink"))
 
-rainbow.pop(2)
+rainbow.pop(2) # 요소 삭제
 
-# count
-rainbow.count("blue")
+# count 개수 세기
+print(rainbow.count("blue"))

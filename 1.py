@@ -1,4 +1,4 @@
-# print("Hello World")
+print("Hello World")
 print("Hello", "Python", 1, 2, "asdfe", sep="\n") # \n줄바꿈
 print()
 print("1")
