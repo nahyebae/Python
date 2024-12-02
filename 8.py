@@ -1,11 +1,11 @@
-# # 과제 2. 자판기 프로그램
-# vending_machine = ['게토레이', '레쓰비', '생수', '이프로']
-# drink = input("마시고 싶은 음료? ")
+# 과제 2. 자판기 프로그램
+vending_machine = ['게토레이', '레쓰비', '생수', '이프로']
+drink = input("마시고 싶은 음료? ")
 
-# if drink in vending_machine:
-#     print(f"{drink} 드릴게요\n")
-# else:
-#     print(f"{drink}는 지금 없네요\n")
+if drink in vending_machine:
+    print(f"{drink} 드릴게요\n")
+else:
+    print(f"{drink}는 지금 없네요\n")
 
 
 # 과제 3. 자판기 프로그램 응용
@@ -15,7 +15,7 @@ user = input("사용자 종류를 입력하세요: \n1.소비자\n2.주인\n")
 
 if user == "1" or user == "소비자": # 소비자
     drink = input("마시고 싶은 음료? ")
-    
+
     if drink in vending_machine:
         vending_machine.remove(drink)
         print(f"{drink} 드릴게요")
