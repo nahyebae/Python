@@ -11,7 +11,7 @@ cart = ["계란", "마늘", "콩나물", "커피"]
 print("두부" in cart)
 print("계란" in cart)
 
-if 1<3:
+if 1 < 3:
     print("True")
     print("True")
 else:
