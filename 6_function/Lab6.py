@@ -75,74 +75,74 @@ else:
     print("잘못된 값입니다.")
 
 
-# # 실습 4. 스택
-# import sys
-# n = int(sys.stdin.readline())
-# stack = []
+# 실습 4. 스택
+import sys
+n = int(sys.stdin.readline())
+stack = []
 
-# def push(p):
-#     stack.append(p)
+def push(p):
+    stack.append(p)
 
-# def pop():
-#     if len(stack) != 0:
-#         a = stack.pop()
-#         print(a)
-#     else:
-#         print(-1)
+def pop():
+    if len(stack) != 0:
+        a = stack.pop()
+        print(a)
+    else:
+        print(-1)
 
-# def size():
-#     print(len(stack))
+def size():
+    print(len(stack))
 
-# def empty():
-#     if len(stack) == 0:
-#         print(1)
-#     else:
-#         print(0)
+def empty():
+    if len(stack) == 0:
+        print(1)
+    else:
+        print(0)
 
-# def top():
-#     if len(stack) != 0:
-#         print(stack[-1])
-#     else:
-#         print(-1)
+def top():
+    if len(stack) != 0:
+        print(stack[-1])
+    else:
+        print(-1)
 
-# for i in range(n):
-#     s = sys.stdin.readline().split()
+for i in range(n):
+    s = sys.stdin.readline().split()
 
-#     if s[0] == "push":
-#         push(s[1])
-#     elif s[0] == "pop":
-#         pop()
-#     elif s[0] == "size":
-#         size()
-#     elif s[0] == "empty":
-#         empty()
-#     elif s[0] == "top":
-#         top()
+    if s[0] == "push":
+        push(s[1])
+    elif s[0] == "pop":
+        pop()
+    elif s[0] == "size":
+        size()
+    elif s[0] == "empty":
+        empty()
+    elif s[0] == "top":
+        top()
 
-# for i in range(n):
-#     s = sys.stdin.readline().split()
+for i in range(n):
+    s = sys.stdin.readline().split()
 
-#     match s[0]:
-#         case "push":
-#             push(s[1])
-#         case "pop":
-#             pop()
-#         case "size":
-#             size()
-#         case "empty":
-#             empty()
-#         case "top":
-#             top()
+    match s[0]:
+        case "push":
+            push(s[1])
+        case "pop":
+            pop()
+        case "size":
+            size()
+        case "empty":
+            empty()
+        case "top":
+            top()
 
-# # 실습 5
-# def get_times(n):
-#     global count
-#     for i in range(1,31):
-#         if i % n == 0:
-#             print(i, end = " ")
-#             count = count + 1
+# 실습 5
+def get_times(n):
+    global count
+    for i in range(1,31):
+        if i % n == 0:
+            print(i, end = " ")
+            count = count + 1
 
-# count = 0
-# n = 3
-# get_times(n)
-# print(f'\n{n}의 배수의 개수: {count}')
+count = 0
+n = 3
+get_times(n)
+print(f'\n{n}의 배수의 개수: {count}')
