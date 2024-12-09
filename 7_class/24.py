@@ -6,7 +6,7 @@ class Employee:
         self.id = Employee.serial_num
         self.name = name
     
-    def __str__(self):
+    def __str__(self): # 스트링으로 바꿀 때 쓰는 거
         return f"사번 : {self.id}, 이름 : {self.name}"
     
 e1 = Employee("최사원")
@@ -24,5 +24,8 @@ employee = [
     Employee('행성'),
     Employee('달')
 ]
+
 for i in employee:
     print(i)
+
+print("\n".join(map(str, employee)))
