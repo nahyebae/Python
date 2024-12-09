@@ -26,5 +26,3 @@ movie1.set_title("해리포터")
 print(movie1.get_title())
 print(movie1._audience)
 print(movie1.get_audience())
-
-

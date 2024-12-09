@@ -16,15 +16,9 @@
 
 # print(factorial)
 
-# # 실습 2. 재귀함수로 피보나치 수 구하기
-# def fibo(n):
-#     if n <= 2:
-#         return 1
-#     else:
-#         return fibo(n-2) + fibo(n-1)
-    
-# for i in range(5):
-#     print(fibo(i), end = " ")
+for i in range(5):
+    print(fibo(i), end = " ")
+
 
 
 # # 방법 2
