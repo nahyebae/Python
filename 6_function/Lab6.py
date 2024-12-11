@@ -1,22 +1,22 @@
-# # 실습 1
-# def f(x,y):
-#     if x == y:
-#         print(f"결과(곱): {x*y}")   
-#     else:
-#         print(f"결과(합): {x+y}")   
+# 실습 1
+def f(x,y):
+    if x == y:
+        print(f"결과(곱): {x*y}")   
+    else:
+        print(f"결과(합): {x+y}")   
 
-# f(2, 2)
-# f(2, 3)    
+f(2, 2)
+f(2, 3)    
 
-# # 실습 2
-# def f2(price, quantity):
-#     order_price = price * quantity 
-#     if order_price < 20000:
-#         order_price += 2500 # 배송비
-#     return order_price
+# 실습 2
+def f2(price, quantity):
+    order_price = price * quantity 
+    if order_price < 20000:
+        order_price += 2500 # 배송비
+    return order_price
 
-# print(f"상품1 가격: {f2(15000,2)}원")
-# print(f"상품2 가격: {f2(15000,1)}원")
+print(f"상품1 가격: {f2(15000,2)}원")
+print(f"상품2 가격: {f2(15000,1)}원")
 
 # 실습 3. 자판기 프로그램 함수화
 vending_machine = ['게토레이','게토레이','레쓰비','레쓰비','생수','생수','생수','이프로']
