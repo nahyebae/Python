@@ -24,10 +24,9 @@ def solution(myString):
 # https://school.programmers.co.kr/learn/courses/30/lessons/181842
 def solution(str1, str2):
     if str1 in str2:
-        answer = 1
+        return  1
     else:
-        answer = 0
-    return answer
+        return  0
 
 # 나누어 떨어지는 숫자 배열
 # https://school.programmers.co.kr/learn/courses/30/lessons/12910?language=python3
@@ -122,3 +121,69 @@ def solution(n):
 
     return answer
 solution(10)
+
+# 다른 방법 
+def solution(n):
+    answer = []
+
+    def collat(x):
+        answer.append(x)
+        if x == 1:
+            return
+        elif x%2==0:
+            collat(x/2)
+        else:
+            collat(x*3+1)
+    collat(n)
+    return answer
+
+# 특이한 정렬
+# https://school.programmers.co.kr/learn/courses/30/lessons/120880?language=python3
+def solution(numlist, n):
+    answer = []
+    d = {}
+    for i in numlist:
+        d[i] = abs(i-n)
+    d1 = sorted(d.items(), key = lambda items:(items[1], - items[0]))
+    print(d.items())
+    print(d1)
+    
+    for i in d1:
+        answer.append(i[0])
+    return answer
+
+# 옹알이 문제
+# https://school.programmers.co.kr/learn/courses/30/lessons/120956?language=python3
+def solution(babbling):
+    answer = 0
+    
+    can = ["aya","ye","woo","ma"]
+    
+    for i in babbling:
+        for j in can:
+            idx = i.find(j)
+            if idx > -1:
+                print(idx, i, j)
+                i = i.replace(j, '_')
+                print(idx, i, j)
+        i = i.replace('_','')
+        if len(i) == 0:
+            answer += 1
+    return answer
+
+# 하노이 탑
+# https://school.programmers.co.kr/learn/courses/30/lessons/12946
+def solution(n):
+    answer = []
+
+    def hanoi(n, f, t, v):
+        if n == 1:
+            answer.append([f,t])
+        else:
+            hanoi(n-1,f,v,t)
+            answer.append([f,t])
+            hanoi(n-1,v,t,f)
+
+    hanoi(n, 1, 3, 2)
+
+    return answer
