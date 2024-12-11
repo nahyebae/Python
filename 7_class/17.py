@@ -11,7 +11,7 @@ movie1 = Movie()
 movie2 = Movie()
 
 Movie.print_msg("print하기")
-# Movie.modify(movie1,"print하기2")
+Movie.modify(movie1,"print하기2")
 movie1.modify("프린트하기3") # self는 자동 할당
 movie1.print_name()
 movie2.modify("프린트하기4")
