@@ -1,3 +1,17 @@
+# 2741
+n = int(input())
+
+for i in range(n):
+    i += 1
+    print(i)
+
+# 10872
+n = int(input())
+p = 1
+for i in range(1,n+1):
+    p = i * p
+print(p)
+
 # 10950
 t = int(input())
 
